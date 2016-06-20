@@ -2,17 +2,5 @@
 layout: default
 ---
 
-<div class="repos">
-  {%for repo in site.repos  %}
-    <article class="repo">
-      <h1><a href="{{ site.baseurl }}{{ repo.url }}">{{ repo.title }}</a></h1>
-
-      <div class="entry">
-        {{ repo.excerpt }}
-      </div>
-      
-      <a href="{{ site.baseurl }}{{ repo.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+This site contains develoipment details about the repos that have been created as part of the Multiscale Genomics projects and links out to each
 
