@@ -3,6 +3,9 @@ layout: default
 ---
 
 {% for repository in site.github.public_repositories %}
+  <article class="repo">
+    <h1><a href="{{ repository.html_url }}">{{ repository.name }}</a></h1>
+  </article>
   * [{{ repository.name }}]({{ repository.html_url }})
 {% endfor %}
 
