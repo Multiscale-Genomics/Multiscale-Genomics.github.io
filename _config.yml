@@ -9,7 +9,8 @@ name: Multiscale Genomics
 description: Virtual Research Environment- Supporting the 3D/4D genomics community with tools to integrate navigation from sequence to 3D/4D chromatin dynamics data.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+# avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://github.com/Multiscale-Genomics/Multiscale-Genomics.github.io/blob/master/images/MultiscaleGenomicsLogo.jpg
 
 #
 # Flags below are optional
