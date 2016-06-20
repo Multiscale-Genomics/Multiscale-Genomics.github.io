@@ -4,11 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+Virtual Research Environment- Supporting the 3D/4D genomics community with tools to integrate navigation from sequence to 3D/4D chromatin dynamics data.
 
 ### Contact me
 
