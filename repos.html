@@ -5,6 +5,7 @@ layout: default
 {% for repository in site.github.public_repositories %}
   <article class="repo">
     <h1><a href="{{ repository.html_url }}">{{ repository.name }}</a></h1>
+    <p>{{repository.project_tagline}}</p>
   </article>
 {% endfor %}
 
