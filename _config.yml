@@ -6,7 +6,7 @@
 name: Multiscale Genomics
 
 # Short bio or description (displayed in the header)
-description: Virtual Research Environment- Supporting the 3D/4D genomics community with tools to integrate navigation from sequence to 3D/4D chromatin dynamics data.
+description: Virtual Research Environment- Supporting the 3D/4D genomics community with tools to integrate navigation from sequence to 3D/4D chromatin dynamics data.<br/><a href="http://www.multiscale-genomics.eu/">http://www.multiscale-genomics.eu/</a>
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/Multiscale-Genomics/Multiscale-Genomics.github.io/master/images/MultiscaleGenomicsLogo_sml.jpg
