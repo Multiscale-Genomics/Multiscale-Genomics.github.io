@@ -7,11 +7,10 @@ layout: default
     <h1><a href="{{ repository.html_url }}">{{ repository.name }}</a></h1>
     <p>{{repository.description}}</p>
     <p>{{repository.language}}</p>
-    <p>{{repository}}</p>
   </article>
 {% endfor %}
 
-<!-- <div class="repos">
+<div class="repos">
   {%for repo in site.repos  %}
     <article class="repo">
       <h1><a href="{{ site.baseurl }}{{ repo.url }}">{{ repo.title }}</a></h1>
@@ -23,4 +22,4 @@ layout: default
       <a href="{{ site.baseurl }}{{ repo.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
-</div> -->
+</div>
