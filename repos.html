@@ -10,7 +10,7 @@ layout: default
   </article>
 {% endfor %}
 
-<div class="repos">
+<!-- <div class="repos">
   {%for repo in site.repos  %}
     <article class="repo">
       <h1><a href="{{ site.baseurl }}{{ repo.url }}">{{ repo.title }}</a></h1>
@@ -22,4 +22,13 @@ layout: default
       <a href="{{ site.baseurl }}{{ repo.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
-</div>
+</div> -->
+
+<h2>organization_members</h2>
+<ul>
+  {% for i in site.github.organization_members %}
+    <li>
+      <p>{{i}}</p>
+    </li>
+  {% endfor %}
+</ul>
