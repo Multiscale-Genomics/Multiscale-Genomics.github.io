@@ -9,7 +9,7 @@ Multiscale Genomics
 Virtual Research Environment- Supporting the 3D/4D genomics community with
 tools to integrate navigation from sequence to 3D/4D chromatin dynamics data.
 
-Full details of the project can be 
+Full details of the project can be found on the `MuG website <http://www.multiscalegenomics.eu>`_.
 
 
 VRE
