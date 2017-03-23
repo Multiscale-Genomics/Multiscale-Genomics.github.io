@@ -20,13 +20,22 @@ Development APIs
 ----------------
 
 * `mg-dm-api <http://mg-dm-api.readthedocs.io/en/latest/>`_
+	Data Management API. This API track files within the VRE and contains
+	meta data about how the file was generated with access to the file geneology.
 
 
 Pipeline Documentation
 ----------------------
 
-* `mg-process-fastq <http://mg-process-fastq.readthedocs.io/en/latest/>`_
-* `mg-process-files <http://mg-process-files.readthedocs.io/en/latest/>`_
+`mg-process-fastq <http://mg-process-fastq.readthedocs.io/en/latest/>`_
+   Pipelines for processing FASTQ data. These pipelines can handle ChIP-seq,
+   MNase-Seq, RNA-Seq and Whole Genome BiSulphate Sequencing (WGBS). There are 
+   also scripts for generating the inditial set of indexes for given genome
+   assemblies. There are also pipelines for processing Hi-C data to generate
+   adjacency matrices and calculate TAD regions
+`mg-process-files <http://mg-process-files.readthedocs.io/en/latest/>`_
+   Pipelines for processing results files into an indexed form for use in a 
+   RESTful interface.
 
 
 RESTful APIs
