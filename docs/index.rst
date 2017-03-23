@@ -23,9 +23,11 @@ VRE
 Development APIs
 ----------------
 
-* `mg-dm-api <http://mg-dm-api.readthedocs.io/en/latest/>`_
+`mg-dm-api <http://mg-dm-api.readthedocs.io/en/latest/>`_
 	Data Management API. This API track files within the VRE and contains
 	meta data about how the file was generated with access to the file geneology.
+
+	`GitHub <https://github.com/Multiscale-Genomics/mg-dm-api>`_
 
 
 Pipeline Documentation
@@ -37,9 +39,13 @@ Pipeline Documentation
    also scripts for generating the inditial set of indexes for given genome
    assemblies. There are also pipelines for processing Hi-C data to generate
    adjacency matrices and calculate TAD regions
+
+   `GitHub <https://github.com/Multiscale-Genomics/mg-process-fastq>`_
 `mg-process-files <http://mg-process-files.readthedocs.io/en/latest/>`_
    Pipelines for processing results files into an indexed form for use in a 
    RESTful interface.
+
+   `GitHub <https://github.com/Multiscale-Genomics/mg-process-files>`_
 
 
 RESTful APIs
