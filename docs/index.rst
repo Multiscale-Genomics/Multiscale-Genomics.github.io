@@ -11,6 +11,10 @@ tools to integrate navigation from sequence to 3D/4D chromatin dynamics data.
 
 Full details of the project can be found on the `MuG website <http://www.multiscalegenomics.eu>`_.
 
+From this site there are links to all of the documentation for each of the 
+respositories within the `MuG GitHub <https://github.com/Multiscale-Genomics>`_.
+Each set of documents contains details about the installation and usage both for
+an end user and for developers creating pipelines.
 
 VRE
 ---
