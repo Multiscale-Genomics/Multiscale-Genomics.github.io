@@ -3,10 +3,24 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Multiscale Genomics's documentation!
-===============================================
+Multiscale Genomics
+===================
+
+Virtual Research Environment- Supporting the 3D/4D genomics community with
+tools to integrate navigation from sequence to 3D/4D chromatin dynamics data.
+
+Full details of the project can be 
+
+
+VRE
+---
+
+
+Development APIs
+----------------
 
 * `mg-dm-api <http://mg-dm-api.readthedocs.io/en/latest/>`_
+
 
 Pipeline Documentation
 ----------------------
@@ -14,6 +28,9 @@ Pipeline Documentation
 * `mg-process-fastq <http://mg-process-fastq.readthedocs.io/en/latest/>`_
 * `mg-process-files <http://mg-process-files.readthedocs.io/en/latest/>`_
 
+
+RESTful APIs
+------------
 
 
 
