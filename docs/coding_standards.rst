@@ -25,6 +25,19 @@ ensure that we are matching the PEP8 coding standard.
 In addition for every script that is written at the top of ALL python
 scripts/modules should be the stub license agreement
 
+Header
+------
+At the top of all scripts and modules there should be the minified license version for the code. There should also be a full copy of the licence in with the repo as part of the root _dir and a reStructuredText version as part of the documentation.
+
+As part of the head section is also the shebang (`#!`) line. This should only be included if the script is an executable and refer to the form:
+
+.. code-block:: none
+   :linenos:
+
+   #!/usr/bin/env python
+
+If the file just contains classes and functions then no shebang is required.
+
 
 Documentation
 -------------
