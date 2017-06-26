@@ -25,12 +25,12 @@ Development APIs
 
    `GitHub mg-dm-api <https://github.com/Multiscale-Genomics/mg-dm-api>`_
 
-#`mg-tool-api <http://mg-tool-api.readthedocs.io/en/latest/>`_
-#   Tool API. This API provides the interface between the pyCOMPSs architecture
-#   and the tool. It provides a standard way for all tools to be wrapped to allow
-#   for a common interface layer.
+`mg-tool-api <http://mg-tool-api.readthedocs.io/en/latest/>`_
+   Tool API. This API provides the interface between the pyCOMPSs architecture
+   and the tool. It provides a standard way for all tools to be wrapped to allow
+   for a common interface layer.
 
-#   `GitHub mg-tool-api <https://github.com/Multiscale-Genomics/mg-tool-api>`_
+   `GitHub mg-tool-api <https://github.com/Multiscale-Genomics/mg-tool-api>`_
 
 
 Pipeline Documentation
