@@ -111,6 +111,20 @@ that the environment is clean ready for the next test case to run. This could
 mean that some files will get generated multiple times, but these should be
 smalls sample datasets.
 
+The following options should be used to test code:
+
+.. code-block:: none
+   :linenos:
+
+   # Run only the tests
+   pytest
+
+   # Run only pylint as a test
+   pytest --pylint --pylint-rcfile=pylintrc -m pylint
+
+   # Run both
+   pytest --pylint --pylint-rcfile=pylintrc
+
 
 Sample Data
 ^^^^^^^^^^^
