@@ -204,6 +204,31 @@ The following options should be used to test code:
    # Run both
    pytest --pylint --pylint-rcfile=pylintrc
 
+There will also be times when there are sections of code that are under
+development or when a test needs to not be included as it is long running or has
+a bug. To handle this pytest has decorators for this. It a test is to not be
+used within the TravisCI environment then the following decorator should be
+used:
+
+.. code-block:: none
+   :linenos:
+
+   @pytest.mark.underdevelopment
+
+pytest can then be run in the following manner:
+
+.. code-block:: none
+   :linenos:
+
+   # Runs all tests
+   pytest
+
+   # Runs only those marked as underdevelopment
+   pytest -m "underdeverlopment"
+
+   # Runs all tests except those underdevelopment
+   pytest -m "not underdeverlopment"
+
 
 Sample Data
 ^^^^^^^^^^^
