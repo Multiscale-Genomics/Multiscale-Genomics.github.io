@@ -242,3 +242,11 @@ the pattern <script_name>.<species>.<assembly>.fasta for genome files and
 
 Only the raw files should be stored. For testing these should be small files
 (~100kB).
+
+Large files can be store, but in cases like that it might be best to have a
+generation script that can calculate the relevant file with the data structure.
+If this is part of a reader then it should be part of the DM API and stored
+within the `dm_generator` directory. The script should be runnable from the
+command line but should also be able to be run by the reader when the `user_id`
+is `test`. The generated file should be saved to the `/tmp/` folder as
+`sample_<reader-tag>.<file-tag>`.
