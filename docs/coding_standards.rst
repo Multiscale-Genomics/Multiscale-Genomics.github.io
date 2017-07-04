@@ -114,8 +114,8 @@ _templates/layout.html
    {% endblock %}
 
 
-Pipelines
----------
+Classes and Functions
+---------------------
 
 All functions should have matching documentation describing the purpose of the
 function, the inputs, outputs and where relevant an example piece of code
