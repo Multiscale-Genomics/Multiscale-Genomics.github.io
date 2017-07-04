@@ -47,6 +47,72 @@ the reStructuredText format (
 `Primer <http://www.sphinx-doc.org/en/stable/rest.html>`_ and
 `RTD related docs <http://documentation-style-guide-sphinx.readthedocs.io/en/latest/style-guide.html>`_)
 
+The code for a basic setup within a repo is as follows:
+
+.. code-block:: none
+   :linenos:
+
+   cd <repo_root>
+   
+   pip install sphinx
+
+   mkdir docs
+   cd docs
+   sphinx-quickstart
+
+Once the `docs` folder has been generated the documentation can be built with:
+
+.. code-block:: none
+   :linenos:
+
+   cd <repo_root>/docs
+   make html
+
+It is advisable to buid the repo locally to remove the majority of the bugs
+before submitting to GitHub and letting the docs build on RTD.
+
+Common extensions include:
+
+.. code-block:: none
+   :linenos:
+
+   extensions = [
+       'sphinx.ext.autodoc',
+       'sphinx.ext.napoleon',
+       'sphinx.ext.viewcode',
+   ]
+
+The current theme across all projects is `default`. This can be set like so:
+
+.. code-block:: none
+   :linenos:
+
+   html_theme = 'default'
+
+There is an issue with the display of code blocks, so there needs to be 2 extra
+style files:
+
+_static/style.css
+^^^^^^^^^^^^^^^^^
+
+.. code-block:: none
+   :linenos:
+
+   .rst-content .highlight > pre {
+       line-height: 1.5;
+   }
+
+_templates/layout.html
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: none
+   :linenos:
+
+   {% extends "!layout.html" %}
+   {% block extrahead %}
+       <link href="{{ pathto("_static/style.css", True) }}" rel="stylesheet" type="text/css">
+   {% endblock %}
+
 
 Pipelines
 ---------
