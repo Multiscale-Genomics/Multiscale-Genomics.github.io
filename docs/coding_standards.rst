@@ -10,6 +10,17 @@ Language and Versions
 - Python 2.7
 - Python 3.5
 
+Installation Method
+-------------------
+
+- PIP
+
+Environment Management
+----------------------
+
+- pyenv
+- pyenv-virtualenv
+
 Style
 -----
 
