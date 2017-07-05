@@ -4,8 +4,8 @@ MuG Coding Guidelines
 The purpose of this document is to provide a description of the standards that 
 code should conform to so that everything can be share and developed with ease.
 
-Versions
---------
+Language and Versions
+---------------------
 
 - Python 2.7
 - Python 3.5
@@ -27,9 +27,13 @@ scripts/modules should be the stub license agreement
 
 Header
 ------
-At the top of all scripts and modules there should be the minified license version for the code. There should also be a full copy of the licence in with the repo as part of the root _dir and a reStructuredText version as part of the documentation.
+At the top of all scripts and modules there should be the minified license
+version for the code. There should also be a full copy of the licence in with
+the repo as part of the root _dir and a reStructuredText version as part of the
+documentation.
 
-As part of the head section is also the shebang (`#!`) line. This should only be included if the script is an executable and refer to the form:
+As part of the head section is also the shebang (`#!`) line. This should only be
+included if the script is an executable and refer to the form:
 
 .. code-block:: none
    :linenos:
@@ -37,6 +41,36 @@ As part of the head section is also the shebang (`#!`) line. This should only be
    #!/usr/bin/env python
 
 If the file just contains classes and functions then no shebang is required.
+
+
+Repository Structure
+--------------------
+
+This is based on python coding standards (PEP8) and the requirements for
+installation (pip) and documentation (as detailed below). The base contents of a
+git repository should include:
+
+.. code-block:: none
+   :linenos:
+
+   <repo_name>/
+      docs/
+         conf.py
+         index.rst
+         install.rst
+         license.rst
+         ...
+      <module>/
+         __init__.py
+         ...
+      tests/
+         data/
+         test_<function_name>.py
+      LICENSE
+      README.md
+      requirements.txt
+      setup.cfg
+      setup.py
 
 
 Documentation
