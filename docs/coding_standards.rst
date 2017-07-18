@@ -1,7 +1,7 @@
 MuG Coding Guidelines
 =====================
 
-The purpose of this document is to provide a description of the standards that 
+The purpose of this document is to provide a description of the standards that
 code should conform to so that everything can be share and developed with ease.
 
 Language and Versions
@@ -98,7 +98,7 @@ The code for a basic setup within a repo is as follows:
    :linenos:
 
    cd <repo_root>
-   
+
    pip install sphinx
 
    mkdir docs
@@ -197,13 +197,13 @@ showing how to call the function:
    -------
    .. code-block:: python
      :linenos:
-     
+
      from tool.common import common
      cf = common()
-     
+
      indexes = cf.run_indexers('/<data_dir>/human_GRCh38.fa.gz')
      print(indexes)
-     
+
 
    """
 
@@ -212,7 +212,7 @@ Architectural Design Record (ADR)
 ---------------------------------
 
 For all repositories there should be a document called adr.rst. This should
-record choices that have been mande and summaries the reason for those
+record choices that have been made and summaries the reason for those
 decisions. This is to provide an in-code record of the design process and
 reasoning behind why technologies have been selected. In the case of python,
 pytest, pyenv and pyenv-virtualenv this is the standard setup for use within the
@@ -269,10 +269,10 @@ pytest can then be run in the following manner:
    pytest
 
    # Runs only those marked as underdevelopment
-   pytest -m "underdeverlopment"
+   pytest -m "underdevelopment"
 
    # Runs all tests except those underdevelopment
-   pytest -m "not underdeverlopment"
+   pytest -m "not underdevelopment"
 
 
 Sample Data
