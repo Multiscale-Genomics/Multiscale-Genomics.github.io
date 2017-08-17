@@ -7,13 +7,22 @@ tools to integrate navigation from sequence to 3D/4D chromatin dynamics data.
 Full details of the project can be found on the
 `MuG website <http://www.multiscalegenomics.eu>`_.
 
-From this site there are links to all of the documentation for each of the 
-respositories within the `MuG GitHub <https://github.com/Multiscale-Genomics>`_.
+From this site there are links to all of the documentation for each of the
+repositories within the `MuG GitHub <https://github.com/Multiscale-Genomics>`_.
 Each set of documents contains details about the installation and usage both for
 an end user and for developers creating pipelines.
 
 VRE
 ---
+
+`VRE <https://github.com/Multiscale-Genomics/VRE>`_
+   MuG Virtual Research Environment. MuG VRE is a web application aimed to allow
+   MuG users to access MuG data and explore and exploit it together with its own
+   data via a selection of tools and visualizers. It is written in PHP, HTML and
+   Javascript.
+
+   `GitHub VRE <https://github.com/Multiscale-Genomics/VRE>`_
+
 
 
 Development APIs
@@ -33,12 +42,12 @@ Development APIs
    `GitHub mg-tool-api <https://github.com/Multiscale-Genomics/mg-tool-api>`_
 
 
-Pipeline Documentation
-----------------------
+Pipelines
+---------
 
 `mg-process-fastq <http://mg-process-fastq.readthedocs.io/en/latest/>`_
    Pipelines for processing FASTQ data. These pipelines can handle ChIP-seq,
-   MNase-Seq, RNA-Seq and Whole Genome BiSulphate Sequencing (WGBS). There are 
+   MNase-Seq, RNA-Seq and Whole Genome BiSulphate Sequencing (WGBS). There are
    also scripts for generating the inditial set of indexes for given genome
    assemblies. There are also pipelines for processing Hi-C data to generate
    adjacency matrices and calculate TAD regions
@@ -46,7 +55,7 @@ Pipeline Documentation
    `GitHub mg-process-fastq <https://github.com/Multiscale-Genomics/mg-process-fastq>`_
 
 `mg-process-files <http://mg-process-files.readthedocs.io/en/latest/>`_
-   Pipelines for processing results files into an indexed form for use in a 
+   Pipelines for processing results files into an indexed form for use in a
    RESTful interface.
 
    `GitHub mg-process-files <https://github.com/Multiscale-Genomics/mg-process-files>`_
