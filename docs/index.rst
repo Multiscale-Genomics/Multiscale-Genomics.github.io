@@ -96,6 +96,7 @@ RESTful APIs
    :caption: Contents:
 
    coding_standards
+   licensing
    license
 
 
