@@ -22,6 +22,7 @@ HOWTO
    howto_tool
    howto_pipeline
    howto_config
+   howto_testing
 
 The following is a walk through of developing a tool and pipeline wrapper to include new functionality within the MuG VRE. There are several stages covering the Tool development, using the tool within a pipeline and defining the configuration files required so that the final product can be smoothly integrated into the MuG VRE.
 
@@ -40,3 +41,6 @@ Adding a new function
 
 `Configuration <howto_config.html>`_
     This takes you through creating JSON configuration files for your tool. This should define all the inputs, outputs and any arguments that are required by the pipelines and tools.
+
+`Testing Your Code <howto_testing.html>`_
+    A important part of making sure that a pipeline or tool is ready for integration is ensuring that the code has been tested. This covers testing the code is functional and that it is capable of running wihin the infrastructure used by the VRE.
