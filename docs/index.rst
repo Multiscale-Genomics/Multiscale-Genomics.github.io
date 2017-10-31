@@ -1,3 +1,18 @@
+.. See the NOTICE file distributed with this work for additional information
+   regarding copyright ownership.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
 Multiscale Genomics
 ===================
 
@@ -11,6 +26,14 @@ From this site there are links to all of the documentation for each of the
 repositories within the `MuG GitHub <https://github.com/Multiscale-Genomics>`_.
 Each set of documents contains details about the installation and usage both for
 an end user and for developers creating pipelines.
+
+If you want to develop tools and pipelines that can run within the VRE please checkout
+the `HOWTO <https://Multiscale-Genomes.readthedocs.io/en/latest/howto/index.html>`_
+section of the site. This lists how to write a pipeline, tool, the configuration files
+and testing that the pipeline works. Please also read about how to apply
+the Apache2.0 license to your code and a document on Coding Standards that you should
+adher to to ensure the best chance of your pipeline being integrated with as smoothly
+as possible.
 
 VRE
 ---
