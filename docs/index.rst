@@ -28,13 +28,13 @@ VRE
 Development APIs
 ----------------
 
-`mg-dm-api <http://mg-dm-api.readthedocs.io/en/latest/>`_
+`mg-dm-api <http://mg-dm-api.readthedocs.io>`_
    Data Management API. This API track files within the VRE and contains
    meta data about how the file was generated with access to the file geneology.
 
    `GitHub mg-dm-api <https://github.com/Multiscale-Genomics/mg-dm-api>`_
 
-`mg-tool-api <http://mg-tool-api.readthedocs.io/en/latest/>`_
+`mg-tool-api <http://mg-tool-api.readthedocs.io>`_
    Tool API. This API provides the interface between the pyCOMPSs architecture
    and the tool. It provides a standard way for all tools to be wrapped to allow
    for a common interface layer.
@@ -45,7 +45,7 @@ Development APIs
 Pipelines
 ---------
 
-`mg-process-fastq <http://mg-process-fastq.readthedocs.io/en/latest/>`_
+`mg-process-fastq <http://mg-process-fastq.readthedocs.io>`_
    Pipelines for processing FASTQ data. These pipelines can handle ChIP-seq,
    MNase-Seq, RNA-Seq and Whole Genome BiSulphate Sequencing (WGBS). There are
    also scripts for generating the inditial set of indexes for given genome
@@ -54,7 +54,7 @@ Pipelines
 
    `GitHub mg-process-fastq <https://github.com/Multiscale-Genomics/mg-process-fastq>`_
 
-`mg-process-files <http://mg-process-files.readthedocs.io/en/latest/>`_
+`mg-process-files <http://mg-process-files.readthedocs.io>`_
    Pipelines for processing results files into an indexed form for use in a
    RESTful interface.
 
@@ -95,6 +95,7 @@ RESTful APIs
    :maxdepth: 2
    :caption: Contents:
 
+   howto/index
    coding_standards
    licensing
    license
