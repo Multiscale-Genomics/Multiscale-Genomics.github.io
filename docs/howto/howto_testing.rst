@@ -22,5 +22,8 @@ Testing a Tool
 Testing a Pipeline
 ------------------
 
+Automated Testing
+-----------------
+
 Running in COMPSs
 -----------------
