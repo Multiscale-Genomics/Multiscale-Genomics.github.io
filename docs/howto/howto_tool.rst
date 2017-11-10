@@ -79,10 +79,12 @@ This is a test tool that takes an input file, writes some text to it and then re
           return True
 
       def run(self, input_files, metadata, output_files):
-          self.test_writer(
+          results = self.test_writer(
               input_files["input_file_location"],
               output_files["output_file_location"]
           )
+
+          results = compss_wait_on(results)
 
           output_metadata = {
                "test": Metadata(
@@ -90,7 +92,7 @@ This is a test tool that takes an input file, writes some text to it and then re
                    file_type="txt",
                    file_path=output_files["test"],
                    sources=[metadata["input_file_location"].file_path],
-                   taxon_id=metadata["input_file_location"].taxon_id
+                   taxon_id=metadata["input_file_location"].taxon_id,
                    meta_data={
                        "tool": "testTool"
                    }
