@@ -32,7 +32,7 @@ When it comes to developing the code all the code should stick to a common stand
 
 Adding a new function
 ---------------------
-All of the examples in the following sections describe code that has been incorporated into a functional workflow and tool within a demonstration VRE Tool that is ready for deployment within the VRE. The code can be found on GitHub.
+All of the examples in the following sections describe code that has been incorporated into a functional workflow and tool within a demonstration VRE Tool that is ready for deployment within the VRE. The code can be found in GitHub repository `mg-process-test <https://github.com/Multiscale-Genomics/mg-process-test>`_.
 
    `GitHub mg-process-test <https://github.com/Multiscale-Genomics/mg-process-test>`_
 

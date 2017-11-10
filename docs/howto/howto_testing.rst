@@ -16,14 +16,31 @@
 HOWTO - Testing Your Code
 =========================
 
-Testing a Tool
---------------
+Running the Code
+----------------
+To run the code it needs a config.json file and an input_metadata.json file to provide the input.
 
-Testing a Pipeline
-------------------
+Running the pipeline manually
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: none
+   :linenos:
+
+   python process_test.py --config config.json --in_metadata input_files.json --out_metadata output_metadata.json
+
+
+Testing a Tools and Pipelines
+-----------------------------
+
+As defined in the coding standards documentation, it is
+
 
 Automated Testing
 -----------------
 
+Once you have defined your test functions it is handle to then hook up the repository with an automated testing framework that can notify you if there are unexpected changes to the behaviour of your code. This is often triggered whenever there is a push to the repository.
+
+
 Running in COMPSs
 -----------------
+

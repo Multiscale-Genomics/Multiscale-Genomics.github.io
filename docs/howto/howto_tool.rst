@@ -32,7 +32,7 @@ All tools should be placed within the `tools` directory within the package.
 Basic Tool
 ----------
 
-This is a test tool that takes an input file, writes some text to it and then returns the file. The file is called `testTool.py`.
+This is a test tool that takes an input file, writes some text to it and then returns the file. The matching code can be found in the GitHub repository `mg-process-test <https://github.com/Multiscale-Genomics/mg-process-test>`_.  The file is called `testTool.py`.
 
 .. code-block:: python
    :linenos:

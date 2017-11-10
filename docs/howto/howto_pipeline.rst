@@ -23,7 +23,7 @@ Each pipeline consists of the main class for the pipeline, a main function for r
 Example Pipeline
 ----------------
 
-This example code uses the testTool.py from the Creating a Tool tutorial.
+This example code uses the testTool.py from the `Creating a Tool <howto_tool.html>`_ tutorial. The matching code cn be found in the GitHub repository `mg-process-test <https://github.com/Multiscale-Genomics/mg-process-test>`_.
 
 There are 2 ways of calling this function, either directly from another program or via the command line.
 
@@ -43,7 +43,7 @@ There are 2 ways of calling this function, either directly from another program 
    import argparse
 
    from basic_modules.workflow import Workflow
-   from basic_modules.metadata import Metadata
+   from utils import logger
 
    from tools.testTool import testTool
 
@@ -66,7 +66,7 @@ There are 2 ways of calling this function, either directly from another program 
                a dictionary containing parameters that define how the operation
                should be carried out, which are specific to each Tool.
            """
-
+           logger.info("Processing Test")
            if configuration is None:
                configuration = {}
 
@@ -97,10 +97,7 @@ There are 2 ways of calling this function, either directly from another program 
            tt_handle = testTool(self.configuration)
            tt_files, tt_meta = tt_handle.run(input_files, metadata, output_files)
 
-           return (
-               tt_files,
-               tt_meta
-           )
+           return (tt_files, tt_meta)
 
 
    # ------------------------------------------------------------------------------
@@ -114,7 +111,7 @@ There are 2 ways of calling this function, either directly from another program 
        two json files: config.json and input_metadata.json.
        """
        # 1. Instantiate and launch the App
-       print("1. Instantiate and launch the App")
+       logger.info("1. Instantiate and launch the App")
        from apps.jsonapp import JSONApp
        app = JSONApp()
        result = app.launch(process_genome,
@@ -123,8 +120,7 @@ There are 2 ways of calling this function, either directly from another program 
                            out_metadata)
 
        # 2. The App has finished
-       print("2. Execution finished; see " + out_metadata)
-       print(result)
+       logger.info("2. Execution finished; see " + out_metadata)
 
        return result
 
@@ -161,9 +157,9 @@ Header
 This section defines the license and any modules that need to be loaded for the code to run correctly. As a bare minimum is shown in the example with the license, import of the Workflow and Metadata basic_tools and the Data Management (DM) API. Theoretically the pipeline does not have to call a tool, but for completeness this uses the Tool generated as part of the `HOWTO - Tools <howto_tool.html>`_ tutorial.
 
 
-`def main_json()` and `__main__`
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-These are the main entry points into the pipeline. Having both allows the pipeline to be run either locally or as part of a series of function calls within the VRE.
+`def main_json()`
+^^^^^^^^^^^^^^^^^
+This is the main entry point into the pipeline. It allows the pipeline to be run either locally or as part of a series of function calls within the VRE.
 
 The `main_json()` function is the primary function of the script and is what initiates running the pipeline. It is from here that the VRE or locally run function will call to with any matching input file, defined output files (is required) and any necessary meta data.
 
@@ -191,93 +187,3 @@ This is a required function which is called by the `main_json()` function. It is
                f_out.write(f_in.read())
 
 This will only work within the COMPSS environment so you will need to test for how your code is getting run.
-
-
-Running the Code
-----------------
-To run the code it needs a config.json file and an input_metadata.json file to provide the input.
-
-config.json
-^^^^^^^^^^^
-
-Defines the configurations required for by the pipeline including parameters that need to be passed from the VRE submission form, file and the related metadata as well as the output files that need to be produced by the pipeline.
-
-.. code-block:: none
-   :linenos:
-
-   {
-       "input_files": [
-           {
-               "required": true,
-               "allow_multiple": false,
-               "name": "genome",
-               "value": "<unique_file_id>"
-           }
-       ],
-       "arguments": [
-           {
-               "name": "project",
-               "value": "run001"
-           },
-           {
-               "name": "description",
-               "value": null
-           }
-       ],
-       "output_files": [
-           {
-               "required": true,
-               "allow_multiple": false,
-               "name": "bwa_index",
-               "file": {
-                   "file_type": "TAR",
-                   "meta_data": {
-                       "visible": true,
-                       "tool": "bwq_indexer",
-                       "description": "Output"
-                   },
-                   "file_path": "tests/data/macs2.Human.GCA_000001405.22.fasta.bwa.tar.gz",
-                   "data_type": "sequence_mapping_index_bwa",
-                   "compressed": "gzip"
-               }
-           }
-       ]
-   }
-
-
-input_file_metadata.json
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-Lists the file location that are used as input. The configuration names should match those that are in the config.json file defined above.
-
-.. code-block:: none
-   :linenos:
-
-   [
-       {
-           "_id": "<unique_file_id>",
-           "data_type": "sequence_dna",
-           "file_type": "FASTA",
-           "file_path": "tests/data/macs2.Human.GCA_000001405.22.fasta",
-           "compressed": 0,
-           "sources": [],
-           "creation_time": {
-               "sec": 1503567524,
-               "usec": 0
-           },
-           "taxon_id": "0",
-           "meta_data": {
-               "visible": true,
-               "validated": 1,
-               "assembly": "GCA_000001405.22"
-           }
-       }
-   ]
-
-Running the pipeline manually
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. code-block:: none
-   :linenos:
-
-   python process_test.py --config config.json --in_metadata input_files.json --out_metadata output_metadata.json
