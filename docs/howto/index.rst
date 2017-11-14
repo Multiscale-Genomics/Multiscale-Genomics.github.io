@@ -12,6 +12,7 @@
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+
 HOWTO
 =====
 
@@ -22,6 +23,7 @@ HOWTO
    howto_tool
    howto_pipeline
    howto_config
+   howto_logging
    howto_testing
 
 The following is a walk through of developing a tool and pipeline wrapper to include new functionality within the MuG VRE. There are several stages covering the Tool development, using the tool within a pipeline and defining the configuration files required so that the final product can be smoothly integrated into the MuG VRE.
@@ -46,6 +48,9 @@ In the test process there are example workflows, tools, documentation, setup scr
 
 `Configuration <howto_config.html>`_
    This takes you through creating JSON configuration files for your tool. This should define all the inputs, outputs and any arguments that are required by the pipelines and tools.
+
+`Logging <howto_logging.html>`_
+   Takes you through adding logging to your workflows and tools to return messages to the user via the MuG VRE.
 
 `Testing Your Code <howto_testing.html>`_
    A important part of making sure that a pipeline or tool is ready for integration is ensuring that the code has been tested. This covers testing the code is functional and that it is capable of running wihin the infrastructure used by the VRE.
