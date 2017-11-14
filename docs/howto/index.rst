@@ -52,4 +52,4 @@ In the test process there are example workflows, tools, documentation, setup scr
 
 Integrating a new tool into the VRE
 -----------------------------------
-The next step is the integration of the workflow/tool into the MuG VRE. To help with this a `GoogleDoc <>`_ has been prepared that details the requirements for correctly creating the Tool description JSON file and the requirements for parameters needed for an application.
+The next step is the integration of the workflow/tool into the MuG VRE. To help with this a `GoogleDoc <https://docs.google.com/document/d/1Fid4RkNyt9-_0g_SrCw8J1k8MrOMZI4GLzzpdCAATZc/edit?usp=sharing>`_ has been prepared that details the requirements for correctly creating the Tool description JSON file and the requirements for parameters needed for an application.
