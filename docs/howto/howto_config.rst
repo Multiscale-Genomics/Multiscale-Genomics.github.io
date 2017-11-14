@@ -21,7 +21,7 @@ Tool Description
 
 This configuration file is used to describe the Tool and inform the VRE about what aruments are requiredby the tool and a list of the file types that can be used as inputs and the matching names that should be used as input paramaeters.
 
-Below is the example Tool config file for the process_test workflow. It is located in the tool_config directory within the repository.
+Below is the example Tool config file for the process_test workflow. It is located in the tool_config directory within the repository. For a full description of all of the parameters please consult the `Tool Integration Document <https://docs.google.com/document/d/1Fid4RkNyt9-_0g_SrCw8J1k8MrOMZI4GLzzpdCAATZc/edit?usp=sharing>`_.
 
 .. code-block:: none
 
