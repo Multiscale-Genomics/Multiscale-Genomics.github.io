@@ -16,7 +16,63 @@
 HOWTO - Configuration Files
 ===========================
 
-There are 2
+Tool Description
+----------------
+
+This configuration file is used to describe the Tool and inform the VRE about what aruments are requiredby the tool and a list of the file types that can be used as inputs and the matching names that should be used as input paramaeters.
+
+Below is the example Tool config file for the process_test workflow. It is located in the tool_config directory within the repository.
+
+.. code-block:: none
+
+   {
+       "_id": "process_test",
+       "name": "Process Test",
+       "title": "Test Workflow",
+       "short_description": "Generates file with some text",
+       "owner": {
+           "institution": "EMBL-EBI",
+           "author": "Mark McDowall",
+           "contact": "mcdowall@ebi.ac.uk",
+           "url": "https://github.com/Multiscale-Genomics/mg-process-test"
+       },
+       "external": true,
+       "has_custom_viewer": false,
+       "keywords": [
+           "dna"
+       ],
+       "infrastructure": {
+           "memory": 12,
+           "cpus": 4,
+           "executable": "/home/pmes/code/mg-process-test/process_test.py",
+           "clouds": {}
+       },
+       "input_files": [],
+       "arguments": [],
+       "output_files": [
+           {
+               "name": "output",
+               "required": true,
+               "allow_multiple": false,
+               "file": {
+                   "file_type": "TXT",
+                   "meta_data": {
+                       "visible": true,
+                       "tool": "process_test",
+                       "description": "Output"
+                   },
+                   "file_path": "test.txt",
+                   "data_type": "text",
+                   "compressed": ""
+               }
+           }
+       ]
+   }
+
+Test Configuration Files
+------------------------
+
+There are 2 configuration JSON files as inputs for the test instance. These describe the input and output files and an required arguments that need to get passed to the workflow. These configuration files are those that would get passed to the workflow by the VRE.
 
 config.json
 ^^^^^^^^^^^
