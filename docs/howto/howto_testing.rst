@@ -101,6 +101,8 @@ Running in COMPSs
 
 It is possible to use a local version of the `COMPS virtual machine <https://www.bsc.es/research-and-development/software-and-apps/software-list/comp-superscalar/>`_ as used by the MuG VRE. Within the VM is is possible to install any required software. To run the application the following command can then be used:
 
+.. coding-block:: none
+
    runcompss                                                         \\
       --lang=python                                                  \\
       --library_path=${HOME}/bin                                     \\
