@@ -82,8 +82,9 @@ An example pytest for the `test_writer <howto_tool.html>`_ tool:
        print(input_files, output_files)
 
        tt_handle = testTool()
-       tt_handle.run(input_files, metadata, output_files)
+       tt_files, tt_meta = tt_handle.run(input_files, metadata, output_files)
 
+       assert output_files['output'] == tt_files['output']
        assert os.path.isfile(text_file) is True
        assert os.path.getsize(text_file) > 0
 
